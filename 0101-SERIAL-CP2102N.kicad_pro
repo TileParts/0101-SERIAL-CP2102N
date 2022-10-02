@@ -447,7 +447,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "0101-SERIAL-CP2102N.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

@@ -6,7 +6,10 @@
 
   (paper "A4")
   (title_block
-    (title "#0102")
+    (title "#0102 SERIAL-SP2102N")
+    (date "2022-10-02")
+    (rev "V1.0")
+    (company "TileParts")
   )
 
   (layers
@@ -133,11 +136,11 @@
     (tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiQ2VudGVyIiwgIkNhcExlZnRDaG9pY2UiOiAiKCIsICJDYXBSaWdodENob2ljZSI6ICIpIiwgIkZvbnRDb21ib0JveCI6ICJVYnVudHVNb25vLUIiLCAiSGVpZ2h0Q3RybCI6ICIwLjciLCAiTGF5ZXJDb21ib0JveCI6ICJGLlNpbGtTIiwgIk11bHRpTGluZVRleHQiOiAiUlgiLCAiUGFkZGluZ0JvdHRvbUN0cmwiOiAiMyIsICJQYWRkaW5nTGVmdEN0cmwiOiAiMCIsICJQYWRkaW5nUmlnaHRDdHJsIjogIjAiLCAiUGFkZGluZ1RvcEN0cmwiOiAiMyIsICJXaWR0aEN0cmwiOiAiMCJ9")
     (attr board_only exclude_from_pos_files exclude_from_bom)
     (fp_text reference "kibuzzard-63395349" (at 0 -3.534728 90) (layer "F.SilkS") hide
-      (effects (font (size 0 0)))
+      (effects (font (size 0 0) (thickness 0.15)))
       (tstamp 105c5085-c2b3-4c14-853d-15f4e44e51ff)
     )
     (fp_text value "G***" (at 0 3.534728 90) (layer "F.SilkS") hide
-      (effects (font (size 0 0)))
+      (effects (font (size 0 0) (thickness 0.15)))
       (tstamp 21d6a74c-a83d-4bfd-ab8d-85b312b41c4c)
     )
     (fp_poly (pts
@@ -301,6 +304,8 @@
     (descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "LED")
     (property "Datasheet" "~")
+    (property "Manufacturer" "EVERLIGHT")
+    (property "PartNumber" "C72038")
     (property "Sheetfile" "0101-SERIAL-CP2102N.kicad_sch")
     (property "Sheetname" "")
     (property "Supplier" "JLC")
@@ -334,7 +339,7 @@
       (net 5 "/TXD") (pinfunction "K") (pintype "passive") (tstamp eea7d4fa-2531-4ce1-a255-d6255bc280d1))
     (pad "2" smd roundrect (at 0.7875 0 270) (size 0.875 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 30 "Net-(D1-Pad2)") (pinfunction "A") (pintype "passive") (tstamp 9985e2c2-c222-4b37-949e-dfb5d4fe015c))
-    (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -379,7 +384,7 @@
       (net 1 "VDD") (pintype "passive") (tstamp fc3ef4d6-0bdc-4a65-a0dc-aec1d10051f0))
     (pad "2" smd roundrect (at 0.51 0 90) (size 0.54 0.64) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 33 "Net-(D4-Pad2)") (pintype "passive") (tstamp a1076955-0248-4a47-94c1-267b8da8bd14))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -431,7 +436,7 @@
       (net 2 "GND") (pinfunction "A1") (pintype "passive") (tstamp c7c3f14a-2561-42fe-a998-c6317648d4d6))
     (pad "2" smd rect (at 0.7 0 180) (size 0.6 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 1 "VDD") (pinfunction "A2") (pintype "passive") (tstamp c96c6fc9-df8c-40a4-beae-07286ee158e4))
-    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -558,7 +563,7 @@
       (net 10 "Net-(J1-PadA5)") (pintype "passive") (tstamp f053844e-a24c-4a61-bac1-42bd8c0f11ad))
     (pad "2" smd roundrect (at 0.51 0) (size 0.54 0.64) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 2 "GND") (pintype "passive") (tstamp d4a249d1-2485-4406-ac8c-6d8ba73f7aa1))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -610,7 +615,7 @@
       (net 2 "GND") (pinfunction "A1") (pintype "passive") (tstamp 1277c4b0-4f61-45b4-9e8b-a39bd9ccffb8))
     (pad "2" smd rect (at 0.7 0 180) (size 0.6 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 4 "/RXD") (pinfunction "A2") (pintype "passive") (tstamp ecfce0d1-1258-447d-863f-daab8c8d1e3b))
-    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -657,7 +662,7 @@
       (net 8 "/RTS{slash}BOOT") (pinfunction "K") (pintype "passive") (tstamp 3e7f41c2-32ae-4bfa-88da-0a324a3f281e))
     (pad "2" smd roundrect (at 0.7875 0 90) (size 0.875 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 32 "Net-(D3-Pad2)") (pinfunction "A") (pintype "passive") (tstamp 9c1784e4-e139-4f67-8e4a-d07dd5ab349f))
-    (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -702,7 +707,7 @@
       (net 14 "Net-(J1-PadB5)") (pintype "passive") (tstamp 07aa0ad7-4feb-4e4f-a1cf-2b3118e206d2))
     (pad "2" smd roundrect (at 0.51 0) (size 0.54 0.64) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 2 "GND") (pintype "passive") (tstamp 2b257ce7-7aea-458c-af19-5314f97d4b54))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -716,11 +721,11 @@
     (tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiQ2VudGVyIiwgIkNhcExlZnRDaG9pY2UiOiAiKCIsICJDYXBSaWdodENob2ljZSI6ICIpIiwgIkZvbnRDb21ib0JveCI6ICJVYnVudHVNb25vLUIiLCAiSGVpZ2h0Q3RybCI6ICIwLjciLCAiTGF5ZXJDb21ib0JveCI6ICJGLlNpbGtTIiwgIk11bHRpTGluZVRleHQiOiAiVFgiLCAiUGFkZGluZ0JvdHRvbUN0cmwiOiAiMyIsICJQYWRkaW5nTGVmdEN0cmwiOiAiMCIsICJQYWRkaW5nUmlnaHRDdHJsIjogIjAiLCAiUGFkZGluZ1RvcEN0cmwiOiAiMyIsICJXaWR0aEN0cmwiOiAiMCJ9")
     (attr board_only exclude_from_pos_files exclude_from_bom)
     (fp_text reference "kibuzzard-6339534D" (at 0 -3.530838 90) (layer "F.SilkS") hide
-      (effects (font (size 0 0)))
+      (effects (font (size 0 0) (thickness 0.15)))
       (tstamp ad31c5ba-4e73-413d-a6f0-87a2475d0834)
     )
     (fp_text value "G***" (at 0 3.530838 90) (layer "F.SilkS") hide
-      (effects (font (size 0 0)))
+      (effects (font (size 0 0) (thickness 0.15)))
       (tstamp 790da3f2-aec0-4576-94c2-5e3d8b0a667b)
     )
     (fp_poly (pts
@@ -900,7 +905,7 @@
       (net 4 "/RXD") (pinfunction "Pin_7") (pintype "passive") (tstamp e2b2583d-cba2-4775-a775-4cdc76c70f69))
     (pad "8" thru_hole oval locked (at 2.54 7.62) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 5 "/TXD") (pinfunction "Pin_8") (pintype "passive") (tstamp 8443af77-29a7-4b9c-8e85-d1bd714c9ebe))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x04_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x04_P2.54mm_Vertical.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -947,7 +952,7 @@
       (net 7 "/DTR{slash}RESET") (pinfunction "K") (pintype "passive") (tstamp a0caada3-b1cf-47ff-9d4f-a651f98d3ec7))
     (pad "2" smd roundrect (at 0.7875 0 90) (size 0.875 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 33 "Net-(D4-Pad2)") (pinfunction "A") (pintype "passive") (tstamp 2489a9ff-9c26-432d-9aba-21767ebb5ed1))
-    (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -992,7 +997,7 @@
       (net 1 "VDD") (pintype "passive") (tstamp b23fce8a-3eb6-4fcf-ae0e-73b0e79d5892))
     (pad "2" smd roundrect (at 0.51 0 270) (size 0.54 0.64) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 30 "Net-(D1-Pad2)") (pintype "passive") (tstamp 1aad40b9-a2af-498f-b6f0-9041e317b3af))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1044,7 +1049,7 @@
       (net 2 "GND") (pinfunction "A1") (pintype "passive") (tstamp 54526389-064b-43a5-95de-2d89ded2f823))
     (pad "2" smd rect (at 0.7 0 180) (size 0.6 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 3 "VBUS") (pinfunction "A2") (pintype "passive") (tstamp d50e5941-e696-4f8d-92b3-893bf9d32aa7))
-    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1283,7 +1288,7 @@
       (net 2 "GND") (pinfunction "A1") (pintype "passive") (tstamp dad7a3a3-39a3-42a9-95a4-7c2c1364972d))
     (pad "2" smd rect (at 0.7 0 90) (size 0.6 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 7 "/DTR{slash}RESET") (pinfunction "A2") (pintype "passive") (tstamp d1080bd8-5d3f-415a-92ed-edb4db0eb8d2))
-    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1295,6 +1300,8 @@
     (at 113.5 118 -90)
     (descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "LED")
+    (property "Manufacturer" "EVERLIGHT")
+    (property "PartNumber" "C72038")
     (property "Sheetfile" "0101-SERIAL-CP2102N.kicad_sch")
     (property "Sheetname" "")
     (property "Supplier" "JLC")
@@ -1328,7 +1335,7 @@
       (net 4 "/RXD") (pinfunction "K") (pintype "passive") (tstamp eb2acfe4-6874-4f8f-95e4-3aee634c3cfa))
     (pad "2" smd roundrect (at 0.7875 0 270) (size 0.875 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 31 "Net-(D2-Pad2)") (pinfunction "A") (pintype "passive") (tstamp 382b24f8-4e27-4e01-9fb2-c34e7ed83e4f))
-    (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1373,7 +1380,7 @@
       (net 1 "VDD") (pintype "passive") (tstamp 2efcd3a0-803c-4658-b1e7-0f1a5084a1ac))
     (pad "2" smd roundrect (at 0.51 0 270) (size 0.54 0.64) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 31 "Net-(D2-Pad2)") (pintype "passive") (tstamp c8953783-d180-48f5-afac-cb60c00e8a8a))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1425,7 +1432,7 @@
       (net 2 "GND") (pinfunction "A1") (pintype "passive") (tstamp ceef2c8e-d246-4baa-b820-e047cb709776))
     (pad "2" smd rect (at 0.7 0 180) (size 0.6 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 6 "/CTS") (pinfunction "A2") (pintype "passive") (tstamp 0c02c1a8-0ebd-46ea-834e-63716b5613f7))
-    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1477,7 +1484,7 @@
       (net 2 "GND") (pinfunction "A1") (pintype "passive") (tstamp 34281699-11dd-4168-b331-30373e3678e5))
     (pad "2" smd rect (at 0.7 0 180) (size 0.6 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 8 "/RTS{slash}BOOT") (pinfunction "A2") (pintype "passive") (tstamp 7891d76b-fa03-4e05-837f-bdb422d2feca))
-    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1529,7 +1536,7 @@
       (net 2 "GND") (pinfunction "A1") (pintype "passive") (tstamp 31bc1cee-8f1a-4b54-9061-8ca649a92a7a))
     (pad "2" smd rect (at 0.68 0 270) (size 0.6 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 5 "/TXD") (pinfunction "A2") (pintype "passive") (tstamp 52ab4584-a638-4da3-b1bc-d011ae76c374))
-    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1574,7 +1581,7 @@
       (net 1 "VDD") (pintype "passive") (tstamp a6dcc2d7-09f1-458d-b26a-23938dbf1da1))
     (pad "2" smd roundrect (at 0.51 0 90) (size 0.54 0.64) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 32 "Net-(D3-Pad2)") (pintype "passive") (tstamp ddc39d95-9cd9-47b7-b38b-dd494a87b672))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2303,6 +2310,8 @@
     (at 109 105.02 90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
+    (property "Manufacturer" "SAMSUNG")
+    (property "PartNumber" "C1525")
     (property "Sheetfile" "0101-SERIAL-CP2102N.kicad_sch")
     (property "Sheetname" "")
     (property "Supplier" "JLC")
@@ -2334,7 +2343,7 @@
       (net 3 "VBUS") (pintype "passive") (tstamp 047fba51-c09f-4f66-90ec-6fc7a1fa32d9))
     (pad "2" smd roundrect (at 0.48 0 90) (size 0.56 0.62) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
       (net 2 "GND") (pintype "passive") (tstamp ec25e8d3-918a-43bf-8bd0-04d49aff1933))
-    (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2379,7 +2388,7 @@
       (net 18 "/RTS") (pintype "passive") (tstamp 7804aea0-1d5b-4d30-a28b-7309577ad768))
     (pad "2" smd roundrect (at 0.825 0 90) (size 0.8 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
       (net 8 "/RTS{slash}BOOT") (pintype "passive") (tstamp 8ff8f072-3dca-487b-ae94-dccc87f41ff8))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2392,6 +2401,7 @@
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Manufacturer" "UniOhm")
+    (property "PartNumber" "C11702")
     (property "Sheetfile" "0101-SERIAL-CP2102N.kicad_sch")
     (property "Sheetname" "")
     (property "Supplier" "JLC")
@@ -2423,7 +2433,7 @@
       (net 1 "VDD") (pintype "passive") (tstamp 4cdbc311-9e23-4a10-a1a8-f125107e9e2c))
     (pad "2" smd roundrect (at 0.51 0) (size 0.54 0.64) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
       (net 16 "Net-(R3-Pad2)") (pintype "passive") (tstamp 9087b374-3757-4875-ae0b-34b8392637ec))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2435,16 +2445,18 @@
     (at 105 117.5 180)
     (descr "SOT-363, SC-70-6")
     (tags "SOT-363 SC-70-6")
-    (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PUMX1.pdf")
+    (property "Manufacturer" "Nexperia")
+    (property "PartNumber" "C455002")
     (property "Sheetfile" "0101-SERIAL-CP2102N.kicad_sch")
     (property "Sheetname" "")
+    (property "Supplier" "JLC-EXT")
     (path "/f6b96ed6-751a-4520-a480-b81de293f8df")
     (attr smd)
     (fp_text reference "Q1" (at 0 2) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp c287a437-deda-431b-95ab-86d1a975e648)
     )
-    (fp_text value "DDC114TH" (at 0 -2) (layer "B.Fab")
+    (fp_text value "PUMH4,115" (at 0 -2) (layer "B.Fab")
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp a4ba15c0-6fe0-41a3-85af-e98ac29bf02e)
     )
@@ -2475,7 +2487,7 @@
       (net 17 "/DTR") (pinfunction "B2") (pintype "input") (tstamp 5e8fc3bf-3645-4a9f-a024-a717d7c7f6dc))
     (pad "6" smd rect (at 0.95 0.65 180) (size 0.65 0.4) (layers "B.Cu" "B.Paste" "B.Mask")
       (net 8 "/RTS{slash}BOOT") (pinfunction "C1") (pintype "passive") (tstamp 9c573985-9d54-45fb-860c-f43c68e87caf))
-    (model "${KICAD6_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2488,6 +2500,8 @@
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Datasheet" "~")
+    (property "Manufacturer" "SAMSUNG")
+    (property "PartNumber" "C23733")
     (property "Sheetfile" "0101-SERIAL-CP2102N.kicad_sch")
     (property "Sheetname" "")
     (property "Supplier" "JLC")
@@ -2519,7 +2533,7 @@
       (net 3 "VBUS") (pintype "passive") (tstamp aa75d219-29e5-49be-9296-70213fafbc22))
     (pad "2" smd roundrect (at 0.48 0 90) (size 0.56 0.62) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
       (net 2 "GND") (pintype "passive") (tstamp 045e1874-d622-44fd-a53b-ce354670875c))
-    (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2531,6 +2545,8 @@
     (at 104.52 108.5 180)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
+    (property "Manufacturer" "SAMSUNG")
+    (property "PartNumber" "C23733")
     (property "Sheetfile" "0101-SERIAL-CP2102N.kicad_sch")
     (property "Sheetname" "")
     (property "Supplier" "JLC")
@@ -2562,7 +2578,7 @@
       (net 1 "VDD") (pintype "passive") (tstamp c36d68ee-12a3-41b1-aad5-ce8772a2610f))
     (pad "2" smd roundrect (at 0.48 0 180) (size 0.56 0.62) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
       (net 2 "GND") (pintype "passive") (tstamp 4f0d0644-1b3a-4354-a597-52456b521fcd))
-    (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2574,7 +2590,8 @@
     (at 111 104.99 90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
-    (property "Manufacturer" "UniOhm")
+    (property "Manufacturer" "YAGEO")
+    (property "PartNumber" "C163478")
     (property "Sheetfile" "0101-SERIAL-CP2102N.kicad_sch")
     (property "Sheetname" "")
     (property "Supplier" "JLC-EXT")
@@ -2606,7 +2623,7 @@
       (net 3 "VBUS") (pintype "passive") (tstamp 88759bc1-cc1f-43bc-8b49-f8bad22390dc))
     (pad "2" smd roundrect (at 0.51 0 90) (size 0.54 0.64) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
       (net 15 "Net-(R1-Pad2)") (pintype "passive") (tstamp 4732c728-ca5f-4197-8a72-95709780353e))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2619,8 +2636,11 @@
     (descr "QFN, 24 Pin (http://ww1.microchip.com/downloads/en/PackagingSpec/00000049BQ.pdf#page=278), generated with kicad-footprint-generator ipc_noLead_generator.py")
     (tags "QFN NoLead")
     (property "Datasheet" "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf")
+    (property "Manufacturer" "SILICON LABS")
+    (property "PartNumber" "C969151")
     (property "Sheetfile" "0101-SERIAL-CP2102N.kicad_sch")
     (property "Sheetname" "")
+    (property "Supplier" "JLC-EXT")
     (path "/71405b8a-8679-46a5-829e-6988a26849be")
     (attr smd)
     (fp_text reference "U1" (at 0 3.3) (layer "B.SilkS") hide
@@ -2705,7 +2725,7 @@
       (net 29 "unconnected-(U1-Pad24)") (pinfunction "~{DCD}") (pintype "input+no_connect") (tstamp 657bf480-1d05-41c8-a863-da6b2bc39df1))
     (pad "25" smd rect locked (at 0 0) (size 2.6 2.6) (layers "B.Cu" "B.Mask")
       (net 2 "GND") (pinfunction "GND") (pintype "passive") (tstamp 80fcf344-89cc-4a14-9007-0b12d33311d8))
-    (model "${KICAD6_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2750,7 +2770,7 @@
       (net 17 "/DTR") (pintype "passive") (tstamp 2943e561-41c7-4c4c-a1c7-0597234d84f7))
     (pad "2" smd roundrect (at 0.825 0 270) (size 0.8 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
       (net 7 "/DTR{slash}RESET") (pintype "passive") (tstamp 44930f72-65d2-4ec4-b9a7-94648cf762c7))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2762,6 +2782,8 @@
     (at 104.52 109.5 180)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
+    (property "Manufacturer" "SAMSUNG")
+    (property "PartNumber" "C1525")
     (property "Sheetfile" "0101-SERIAL-CP2102N.kicad_sch")
     (property "Sheetname" "")
     (property "Supplier" "JLC")
@@ -2793,7 +2815,7 @@
       (net 1 "VDD") (pintype "passive") (tstamp 346a5efd-92de-42ab-81b8-06a5ebad7f57))
     (pad "2" smd roundrect (at 0.48 0 180) (size 0.56 0.62) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
       (net 2 "GND") (pintype "passive") (tstamp 39d11184-7d85-435b-b251-c3c30b88abdc))
-    (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2806,7 +2828,8 @@
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Datasheet" "~")
-    (property "Manufacturer" "UniOhm")
+    (property "Manufacturer" "YAGEO")
+    (property "PartNumber" "C137974")
     (property "Sheetfile" "0101-SERIAL-CP2102N.kicad_sch")
     (property "Sheetname" "")
     (property "Supplier" "JLC-EXT")
@@ -2838,7 +2861,7 @@
       (net 15 "Net-(R1-Pad2)") (pintype "passive") (tstamp 365ea152-68bc-4437-b8fe-1bf1785214b3))
     (pad "2" smd roundrect (at 0.51 0 90) (size 0.54 0.64) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
       (net 2 "GND") (pintype "passive") (tstamp 492d966a-88de-401e-83da-da97fe82e2ae))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
