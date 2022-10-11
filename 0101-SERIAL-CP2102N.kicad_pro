@@ -63,10 +63,7 @@
         "copper_edge_clearance|114500000|100200000|2a58aff6-3750-480d-a332-93eb5bddc4c8|2a23b8c6-57fe-40d2-b491-dcd91f3bff45",
         "copper_edge_clearance|114500000|119800000|1a0dea20-2abd-42b0-b9ca-8ad114438e3d|29c7d0fc-5b9f-433f-9a57-169d6d7f0aab",
         "copper_edge_clearance|118500000|100200000|6af0107f-cd77-4cb2-8933-e3bcf2b3a3b8|1596dc5f-1ac4-4c29-8318-bd1ec0be473e",
-        "copper_edge_clearance|118500000|119800000|99f0e15a-0a5f-4ced-a2c4-cf2909cfa677|ab9b52fb-3ca3-4197-bbfb-31f7ed26232a",
-        "silk_overlap|105000000|113618966|80ec2d5f-19fb-417c-9ff5-9c5f1bea85a2|8ace8153-5fbc-4834-97da-04e07e01d00d",
-        "silk_overlap|105000000|116340000|a469a0a0-1397-477b-ba97-f6ed5024c879|80ec2d5f-19fb-417c-9ff5-9c5f1bea85a2",
-        "silk_overlap|112250000|118350000|757bcd01-1bd2-46d8-b6a9-4f2c826106dc|aa5fe4e1-9a74-4a00-befb-4f1e6dba0801"
+        "copper_edge_clearance|118500000|119800000|99f0e15a-0a5f-4ced-a2c4-cf2909cfa677|ab9b52fb-3ca3-4197-bbfb-31f7ed26232a"
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -99,7 +96,7 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
